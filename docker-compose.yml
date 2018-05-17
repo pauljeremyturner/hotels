@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+
+  mongodb:
+    image: mongo:3.2
+    ports:
+    - 27017:27017
+
+  bookings:
+    image: paulturner/bookings
+    ports:
+    - 8080:8080
+    links:
+    - mongodb
+    - hotelrefdata
+    depends_on:
+    - mongodb
+    - hotelrefdata
+    entrypoint: "java  -jar /app.jar"
+
+  hotelrefdata:
+    image: paulturner/hotelrefdata
+    ports:
+    - 8081:8081
+    entrypoint: "java  -jar /app.jar"

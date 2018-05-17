@@ -1,0 +1,4 @@
+include 'hotelrefdata'
+include 'bookings'
+include 'hotelrefdata-api'
+
