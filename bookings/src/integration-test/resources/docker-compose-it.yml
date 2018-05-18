@@ -3,10 +3,9 @@ version: "3"
 services:
 
   mongodb:
-    image: mongo:3.2
+    image: 'mongo:3.4.1'
     ports:
     - 27017:27017
-    entrypoint: "java  -jar /app.jar"
 
   hotelrefdata:
     image: paulturner/hotelrefdata
@@ -24,3 +23,4 @@ services:
     depends_on:
     - mongodb
     - hotelrefdata
+    entrypoint: "java  -jar /app.jar"
