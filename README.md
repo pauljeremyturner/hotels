@@ -105,3 +105,5 @@ Here are some useful requests that can be run from command line to test the syst
  Alternatively, You can use swagger with the json payloads above to call the services
  http://localhost:8080/swagger-ui.html
  
+ Hotel ids should be a numeric string between "1" and "8"
+ 
