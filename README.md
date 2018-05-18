@@ -7,10 +7,15 @@ Build a set of microservices that support a simple hotel booking website that al
 
 ## Functional Requirements
  [x] As a client, I can create a new booking
+ 
  [x] As a client, I can read an existing booking
+ 
  [ ] As a client, I can change an existing booking
+ 
  [ ] As a client, I can delete an existing booking
+ 
  [ ] As a client, I can send a notification for bookings
+ 
 > Note: This requirements are in priority order, use time boxing to deliver as many as you can in suggested time<
 
 ## Technical Requirements
@@ -40,7 +45,7 @@ Given more time, I would have maybe implemented the Rest service as HATEOS.
 
 - usage of java features with comments & coding conventions/style
 One thing I don't like about Spring Rest Controllers is that they are a bit inflexible given
-that the rest methodshave to either return the body response class or a `ResponseEntity`  I prefer
+that the rest methods have to either return the body response class or a `ResponseEntity`  I prefer
 how Jersey/DropWizard handle the response as I think it gives a more flexible approach to returning
 a non-happy path response body.  I don't think there is a 100% tidy way to do this in Spring Boot.
 I especially don't like using exception handlers to drive non exception flow (e.g. for 4xx responses) 
